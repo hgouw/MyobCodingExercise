@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myob.BusinessLayer.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myob.Helper", "Myob.Helper\Myob.Helper.csproj", "{9A41A641-D492-4707-9E7B-092BD51D8F38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myob.HelperTests", "Myob.HelperTests\Myob.HelperTests.csproj", "{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myob.DataAccessLayer", "Myob.DataAccessLayer\Myob.DataAccessLayer.csproj", "{8BE951F0-8D13-4128-BA4A-2690F6140765}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myob.Client", "Myob.Client\Myob.Client.csproj", "{A257CCB4-36EF-4ECB-B65B-4AE3A107CB34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myob.Helper.Tests", "Myob.Helper.Tests\Myob.Helper.Tests.csproj", "{411D05C2-3DCC-4453-AC6E-ED93038D54B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{9A41A641-D492-4707-9E7B-092BD51D8F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A41A641-D492-4707-9E7B-092BD51D8F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A41A641-D492-4707-9E7B-092BD51D8F38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8BE951F0-8D13-4128-BA4A-2690F6140765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8BE951F0-8D13-4128-BA4A-2690F6140765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BE951F0-8D13-4128-BA4A-2690F6140765}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{A257CCB4-36EF-4ECB-B65B-4AE3A107CB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A257CCB4-36EF-4ECB-B65B-4AE3A107CB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A257CCB4-36EF-4ECB-B65B-4AE3A107CB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411D05C2-3DCC-4453-AC6E-ED93038D54B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411D05C2-3DCC-4453-AC6E-ED93038D54B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411D05C2-3DCC-4453-AC6E-ED93038D54B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411D05C2-3DCC-4453-AC6E-ED93038D54B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

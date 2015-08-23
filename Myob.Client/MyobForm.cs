@@ -23,8 +23,8 @@ namespace Myob.Client
 
             if (dlgOpenFile.ShowDialog() == DialogResult.OK)
             {
-                var filename = dlgOpenFile.FileNames.Select(f => f).First();
-                var employees = ReadCsv(filename);
+                var input = dlgOpenFile.FileNames.Select(f => f).First();
+                var employees = ReadCsv(input);
                 var payslips = new List<PaySlip> { };
                 foreach (var employee in employees)
                 {
@@ -32,7 +32,9 @@ namespace Myob.Client
                     payslip.Process();
                     payslips.Add(payslip);
                 }
-                WriteCsv(payslips, filename.ToLower().Replace("input", "output"));
+                var output = input.ToLower().Replace("input", "output");
+                WriteCsv(payslips, output);
+                lblMessage.Text = string.Format("Payslip has been generated on {0}", output);
             }
         }
     }

@@ -30,11 +30,12 @@
         {
             this.btnPayslip = new System.Windows.Forms.Button();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPayslip
             // 
-            this.btnPayslip.Location = new System.Drawing.Point(106, 70);
+            this.btnPayslip.Location = new System.Drawing.Point(24, 40);
             this.btnPayslip.Name = "btnPayslip";
             this.btnPayslip.Size = new System.Drawing.Size(75, 23);
             this.btnPayslip.TabIndex = 0;
@@ -42,15 +43,25 @@
             this.btnPayslip.UseVisualStyleBackColor = true;
             this.btnPayslip.Click += new System.EventHandler(this.btnPayslip_Click);
             // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(118, 46);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblMessage.TabIndex = 1;
+            // 
             // frmMyob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(723, 103);
+            this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnPayslip);
             this.Name = "frmMyob";
             this.Text = "MYOB";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -58,6 +69,7 @@
 
         private System.Windows.Forms.Button btnPayslip;
         private System.Windows.Forms.OpenFileDialog dlgOpenFile;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
 

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}</ProjectGuid>
+    <ProjectGuid>{411D05C2-3DCC-4453-AC6E-ED93038D54B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Myob.HelperTests</RootNamespace>
-    <AssemblyName>Myob.HelperTests</AssemblyName>
+    <RootNamespace>Myob.Helper.Tests</RootNamespace>
+    <AssemblyName>Myob.Helper.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Myob.HelperTests")]
+[assembly: AssemblyTitle("Myob.Helper.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Myob.HelperTests")]
+[assembly: AssemblyProduct("Myob.Helper.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5e8548d6-4a21-4f4e-9de8-99f2118742c2")]
+[assembly: Guid("411d05c2-3dcc-4453-ac6e-ed93038d54b2")]
 
 // Version information for an assembly consists of the following four values:
 //
