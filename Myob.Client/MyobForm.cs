@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -16,18 +17,22 @@ namespace Myob.Client
 
         private void btnPayslip_Click(object sender, EventArgs e)
         {
-            this.dlgOpenFile.Filter = "CSV files (*.csv)|*.csv";
-            this.dlgOpenFile.FilterIndex = 1;
-            this.dlgOpenFile.RestoreDirectory = false;
+            dlgOpenFile.Filter = "CSV files (input.csv)|input.csv";
+            dlgOpenFile.FilterIndex = 1;
+            dlgOpenFile.RestoreDirectory = false;
 
-            if (this.dlgOpenFile.ShowDialog() == DialogResult.OK)
+            if (dlgOpenFile.ShowDialog() == DialogResult.OK)
             {
-                var filenames = from f in this.dlgOpenFile.FileNames
-                                select f;
-                foreach (string filename in filenames)
+                var filename = dlgOpenFile.FileNames.Select(f => f).First();
+                var employees = ReadCsv(filename);
+                var payslips = new List<PaySlip> { };
+                foreach (var employee in employees)
                 {
-                    var employees = ReadCsv(filename);
+                    var payslip = new PaySlip { Employee = employee };
+                    payslip.Process();
+                    payslips.Add(payslip);
                 }
+                WriteCsv(payslips, filename.ToLower().Replace("input", "output"));
             }
         }
     }

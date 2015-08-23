@@ -11,13 +11,13 @@ namespace Myob.DataAccessLayer
     public static class InputOuput
     {
         /// <summary>
-        /// Return the list of Employees Details from the Input Csv file
+        /// Read the list of Employees Details from the given filename
         /// </summary>
         /// <returns></returns>
-        public static List<Employee> ReadCsv(string fullfilename)
+        public static List<Employee> ReadCsv(string filename)
         {
             var employees = new List<Employee> { };
-            FileStream fileStream = new FileStream(fullfilename, FileMode.Open);
+            FileStream fileStream = new FileStream(filename, FileMode.Open);
             using (StreamReader streamReader = new StreamReader(fileStream))
             {
                 string line = streamReader.ReadLine();
@@ -36,6 +36,20 @@ namespace Myob.DataAccessLayer
                 };
             }
             return employees;
+        }
+
+        /// <summary>
+        /// Write the list of Employee Payslips into the given filename
+        /// </summary>
+        public static void WriteCsv(List<PaySlip> payslips, string filename)
+        {
+            FileStream fileStream = new FileStream(filename, FileMode.OpenOrCreate);
+            StreamWriter streamWriter = new StreamWriter(fileStream);
+            foreach (var payslip in payslips)
+            {
+                streamWriter.WriteLine(payslip.ToCsv());
+            }
+            streamWriter.Close();
         }
     }
 }
