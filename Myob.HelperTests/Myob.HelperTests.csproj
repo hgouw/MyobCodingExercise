@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C91268F-9D9A-4E5A-B5EF-DC4E993125EF}</ProjectGuid>
+    <ProjectGuid>{5E8548D6-4A21-4F4E-9DE8-99F2118742C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Myob.BusinessLayer.Tests</RootNamespace>
-    <AssemblyName>Myob.BusinessLayer.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>Myob.HelperTests</RootNamespace>
+    <AssemblyName>Myob.HelperTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -51,13 +51,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="PaySlipTests.cs" />
+    <Compile Include="CalculateTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Myob.BusinessLayer\Myob.BusinessLayer.csproj">
-      <Project>{7E8C4AE6-20D4-4C6D-8737-389B34ED1E56}</Project>
-      <Name>Myob.BusinessLayer</Name>
+    <ProjectReference Include="..\Myob.Helper\Myob.Helper.csproj">
+      <Project>{9A41A641-D492-4707-9E7B-092BD51D8F38}</Project>
+      <Name>Myob.Helper</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
