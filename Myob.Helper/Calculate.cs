@@ -11,7 +11,7 @@ namespace Myob.Helper
         /// Calculate the Monthly Gross Income
         /// </summary>
         /// <param name="annualSalary">Annual Salary</param>
-        public static decimal GrossIncome(decimal annualSalary) => Math.Floor(annualSalary / 12);
+        public static decimal GrossIncome(decimal annualSalary) => decimal.Round(annualSalary / 12, 0);
 
         /// <summary>
         /// Calculate the Monthly Income Tax (based on the ATO rates for 2012-13 financial year)
@@ -40,7 +40,7 @@ namespace Myob.Helper
             {
                 incomeTax = (54547 + (taxableIncome - 180000) * 0.45m) / 12;
             }
-            return Math.Ceiling(incomeTax);
+            return decimal.Round(incomeTax, 0);
         }
 
         /// <summary>
@@ -55,6 +55,6 @@ namespace Myob.Helper
         /// </summary>
         /// <param name="grossIncome">Monthly Gross Income</param>
         /// <param name="superRate">Superannuation Rate</param>
-        public static decimal Super(decimal grossIncome, float superRate) => Math.Floor(grossIncome * (decimal)superRate);
+        public static decimal Super(decimal grossIncome, float superRate) => decimal.Round(grossIncome * (decimal)superRate, 0);
     }
 }
