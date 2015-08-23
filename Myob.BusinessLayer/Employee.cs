@@ -18,8 +18,8 @@
         /// </summary>
         public float SuperRate { get; set; }
         /// <summary>
-        /// Payment Start Date
+        /// Payment Period
         /// </summary>
-        //public DateTime PaymentStartDate { get; set; }
+        public string PaymentPeriod { get; set; }
     }
 }

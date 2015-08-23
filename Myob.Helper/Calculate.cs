@@ -8,13 +8,13 @@ namespace Myob.Helper
     public static class Calculate
     {
         /// <summary>
-        /// Calculate Monthly Gross Income
+        /// Calculate the Monthly Gross Income
         /// </summary>
         /// <param name="annualSalary">Annual Salary</param>
         public static decimal GrossIncome(decimal annualSalary) => Math.Floor(annualSalary / 12);
 
         /// <summary>
-        /// Calculate Monthly Income Tax (based on the ATO rates for 2012-13 financial year)
+        /// Calculate the Monthly Income Tax (based on the ATO rates for 2012-13 financial year)
         /// </summary>
         /// <param name="taxableIncome">Taxable Income</param>
         public static decimal IncomeTax(decimal taxableIncome)
@@ -44,14 +44,14 @@ namespace Myob.Helper
         }
 
         /// <summary>
-        /// Calculate Monthly Net Income
+        /// Calculate the Monthly Net Income
         /// </summary>
         /// <param name="grossIncome">Monthly Gross Income</param>
         /// <param name="incomeTax">Monthly Income Tax</param>
         public static decimal NetIncome(decimal grossIncome, decimal incomeTax) => grossIncome - incomeTax;
 
         /// <summary>
-        /// Calculate Monthly Superannuation Contribution
+        /// Calculate the Monthly Superannuation Contribution
         /// </summary>
         /// <param name="grossIncome">Monthly Gross Income</param>
         /// <param name="superRate">Superannuation Rate</param>

@@ -42,6 +42,6 @@ namespace Myob.BusinessLayer
         /// <summary>
         /// Returns the Payslip in CVS format
         /// </summary>
-        public string ToCsv() => $"{Employee.Name.ToString()},{GrossIncome},{IncomeTax},{NetIncome},{Super}";
+        public string ToCsv() => $"{Employee.Name.ToString()},{Employee.PaymentPeriod},{GrossIncome},{IncomeTax},{NetIncome},{Super}";
     }
 }
