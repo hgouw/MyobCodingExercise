@@ -19,7 +19,7 @@ namespace Myob.Client
         {
             dlgOpenFile.Filter = "CSV files (input.csv)|input.csv";
             dlgOpenFile.FilterIndex = 1;
-            dlgOpenFile.RestoreDirectory = false;
+            dlgOpenFile.RestoreDirectory = true;
 
             if (dlgOpenFile.ShowDialog() == DialogResult.OK)
             {
